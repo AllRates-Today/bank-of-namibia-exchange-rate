@@ -1,6 +1,6 @@
 {
   "name": "bank-of-namibia-exchange-rate",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Official Bank of Namibia (Namibia) daily exchange rates — 4 currencies vs NAD, current table, archive from 2026. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "bon",
