@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-of-namibia-exchange-rate.svg)](https://github.com/AllRates-Today/bank-of-namibia-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-of-namibia-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/NAD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbon%3Fsource%3DUSD%26target%3DNAD&query=%24.rate&label=USD%2FNAD%20published%20by%20Bank%20of%20Namibia&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bon/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbon%3Fsource%3DUSD%26target%3DNAD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bon/)
 
 **Official Bank of Namibia (Namibia) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of Namibia itself prints, every business day.**
 
@@ -32,6 +34,23 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of Namibia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Bank of Namibia — 4 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AOA | NAD | reference | 0.0177 |
+| EUR | NAD | reference | 18.5476 |
+| GBP | NAD | reference | 21.873 |
+| USD | NAD | reference | 16.5144 |
+
+Source: [Official rates published by BON, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bon/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
