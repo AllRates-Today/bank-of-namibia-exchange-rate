@@ -42,14 +42,14 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Bank of Namibia — 4 rates. Updated 2026-10-15.
+Published **2026-10-16** by Bank of Namibia — 4 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AOA | NAD | reference | 0.0178 |
-| EUR | NAD | reference | 18.575 |
-| GBP | NAD | reference | 21.9374 |
-| USD | NAD | reference | 16.5653 |
+| AOA | NAD | reference | 0.0177 |
+| EUR | NAD | reference | 18.4747 |
+| GBP | NAD | reference | 21.8872 |
+| USD | NAD | reference | 16.4534 |
 
 Source: [Official rates published by BON, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bon/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
