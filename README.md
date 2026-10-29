@@ -47,14 +47,14 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Bank of Namibia — 4 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Bank of Namibia — 4 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AOA | NAD | reference | 0.0179 |
-| EUR | NAD | reference | 18.5326 |
-| GBP | NAD | reference | 22.1548 |
-| USD | NAD | reference | 16.6632 |
+| EUR | NAD | reference | 18.5104 |
+| GBP | NAD | reference | 22.1276 |
+| USD | NAD | reference | 16.6156 |
 
 </details>
 
@@ -219,6 +219,7 @@ The Bank of Namibia publishes daily indicative rates for the Namibia dollar agai
 
 - Publisher's own page: [Daily exchange rates](https://www.bon.com.na/) · [www.bon.com.na](https://www.bon.com.na)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Bank of Namibia rates page](https://allratestoday.com/central-bank-rates-api/bon/)
+- In the API: usually by **06:20 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
