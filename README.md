@@ -24,37 +24,22 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Bank of Namibia table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/bon?source=USD&target=NAD"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/bon').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Bank of Namibia table](https://allratestoday.com/api/open/central-bank/bon/table.svg)](https://allratestoday.com/central-bank-rates-api/bon/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Bank of Namibia — 4 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Bank of Namibia — 4 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AOA | NAD | reference | 0.0179 |
-| EUR | NAD | reference | 18.5104 |
-| GBP | NAD | reference | 22.1276 |
-| USD | NAD | reference | 16.6156 |
+| AOA | NAD | reference | 0.0178 |
+| EUR | NAD | reference | 18.5947 |
+| GBP | NAD | reference | 22.2628 |
+| USD | NAD | reference | 16.623 |
 
 </details>
 
