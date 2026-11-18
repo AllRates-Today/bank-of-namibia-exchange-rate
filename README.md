@@ -32,14 +32,14 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-17 by Bank of Namibia — 4 rates. Updated 2026-11-17.</summary>
+<summary>Table as text: published 2026-11-18 by Bank of Namibia — 4 rates. Updated 2026-11-18.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AOA | NAD | reference | 0.0182 |
-| EUR | NAD | reference | 18.6664 |
-| GBP | NAD | reference | 22.3775 |
-| USD | NAD | reference | 16.9642 |
+| AOA | NAD | reference | 0.0181 |
+| EUR | NAD | reference | 18.641 |
+| GBP | NAD | reference | 22.3906 |
+| USD | NAD | reference | 16.9716 |
 
 </details>
 
